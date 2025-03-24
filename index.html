@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pythagorean Theorem</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <svg width="90%" height="90%" onload="makeDraggable(evt)">
+            <rect id="moving-rect" x="0" y="12.5" width="15" height="2" fill="rgba(123, 39, 245, 1)" />
+            <line id="hypotenuse" x1="15" y1="14" x2="14" y2="15" stroke="rgba(255, 174, 0, 1)" stroke-width="2"/>
+            <circle id="horizontal-circle" cx="15" cy="14" r="5" class="draggable-x" fill="rgba(123, 39, 245, 1)" stroke="rgba(123, 39, 245, 0.46)" stroke-width="10px"/>
+            <rect id="vertical-rect" x="12.5" y="0" width="2" height="15" fill="rgba(255, 0, 0, 1)" />
+            <circle id="vertical-circle" cx="14" cy="15" r="5" class="draggable-y" fill="red" stroke="rgba(255, 0, 0, 0.46)" stroke-width="10px"/>
+        </svg>
+        <div>
+            <span class="leg1">Leg 1: <span id="leg1"></span></span>
+            <span class="leg2">Leg 2: <span id="leg2"></span></span>
+            <span class="hyp">Hypotenuse: <span id="hyp"></span></span>
+        </div>
+    </body>
+</html>
